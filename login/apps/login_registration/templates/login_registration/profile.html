@@ -6,9 +6,10 @@
   </head>
   <body>
     <h1>I SHOW PICTURES AND STUFF</h1>
-    <p>Testing and stuff for profiles</p>
-    <h1>Success!</h1>
     <p> Welcome {{request.session.user.firstname}}! You're logged in!</p>
     <a href='{% url 'logout' %}'>Logout</a>
+
+    <p>{{ biography }}</p>
+    <p>{{ past attended events}}</p>
   </body>
 </html>

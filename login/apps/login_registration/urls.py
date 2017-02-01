@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from views import index, loginvalidate, registervalidate, success, logout, register, community, adoption
+from views import index, loginvalidate, registervalidate, success, logout, register, community, adoption, editprofile
 urlpatterns = [
     url(r'^$', index, name='index'),
     url(r'^loginvalidate$', loginvalidate, name='loginvalidate'),
@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'^logout$', logout, name='logout'),
     url(r'^register$', register, name='register'),
     url(r'^community$', community, name='community'),
-    url(r'^adoption$', adoption, name='adoption')
+    url(r'^adoption$', adoption, name='adoption'),
+    url(r'^editprofile$' editprofile, name='editprofile')
 ]
